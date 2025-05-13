@@ -18,6 +18,29 @@ Este repositorio contiene **la documentación técnica** del proyecto, diseñada
 
 ---
 
+## ✅ Lista de Requisitos escogidos
+
+RF1: Permitir el registro de nuevos alumnos con información básica (nombre, apellido, fecha de nacimiento, contacto).
+
+RF2: Permitir el registro de nuevos entrenadores con información básica (nombre, apellido, especialidad, disponibilidad).
+
+RF3: Asignar alumnos a horarios de entrenamiento según su categoría.
+
+RF4: Permitir a los entrenadores ver la lista de alumnos asignados a sus sesiones.
+
+RF5: Generar horarios de entrenamiento semanales y permitir su visualización.
+
+RF6: Registrar pagos de alumnos y actualizar automáticamente su estado de pago.
+
+RF7: Enviar notificaciones por correo electrónico para recordatorios de pagos pendientes.
+
+RF8: Permitir a los padres/tutores ver el horario y progreso de sus hijos.
+
+RF9: Generar reportes básicos de asistencia por alumno o grupo.
+
+RF10: Permitir a los administradores crear, editar y eliminar usuarios (alumnos, entrenadores, padres).
+
+
 ## 🛠️ Tecnologías Utilizadas para la Documentación
 
 - **HTML5**: Estructura semántica del contenido.
@@ -44,10 +67,9 @@ El sistema está concebido como una aplicación web con arquitectura modular, pe
 
 ## 📄 Contenido del Repositorio
 
-- `/docs` → Archivos HTML, CSS y JS de la documentación.
-- `/assets` → Imágenes, diagramas y recursos visuales.
+- `/assets` → Archivos HTML, CSS y JS de la documentación.
+- `/docs` → Imágenes, diagramas y recursos visuales.
 - `README.md` → Este archivo.
-- `requisitos.pdf` → Documento oficial con la Especificación de Requisitos IEEE 830.
 - `index.html` → Punto de entrada de la documentación web.
 
 ---
