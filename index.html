@@ -100,7 +100,7 @@
             </article>
             <article>
                 <h3>Interfaces de usuario</h3>
-                <div id="ui-carousel" class="carousel slide">
+                <div id="ui-carousel" class="carousel slide mockups">
                     <div class="carousel-indicators" id="ui-indicators">
                     </div>
                     <div class="carousel-inner" id="ui-inner">
@@ -688,11 +688,25 @@
                     <div class="header">
                     <h4>futbol_admin.sql</h4>
                     <div class="buttons">
-                        <button id="btn-descargar" onclick="descargarArchivo()">Descargar</button>
-                        <button id="btn-copiar" onclick="copiarCodigo()">Copiar</button>
+                        <button class="script-button" id="btn-descargar" onclick="descargarArchivo()">Descargar</button>
+                        <button class="script-button" id="btn-copiar" onclick="copiarCodigo()">Copiar</button>
                     </div>
                     </div>
                     <pre id="codigoSQL">
+
+CREATE DATABASE fulboladmin
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'Spanish_Colombia.1252'
+    LC_CTYPE = 'Spanish_Colombia.1252'
+    LOCALE_PROVIDER = 'libc'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+USE fulboladmin;
+
 CREATE TABLE categories (
     category_id INT PRIMARY KEY,
     category_name VARCHAR(100),
