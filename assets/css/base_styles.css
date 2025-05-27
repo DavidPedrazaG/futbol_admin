@@ -97,6 +97,10 @@ article iframe{
     height: 350px;
 }
 
+.mockups{
+    height: auto;
+}
+
 .carousel-inner iframe{
     width: 60%;
     height: 350px;
@@ -111,7 +115,7 @@ article iframe{
 .carousel-inner img{
     width: 50%;
     max-width: 50%;
-    height: 350px;
+    height: auto;
     border: 2.5px solid #000;
     border-radius: 8px;
     padding: 10px;
@@ -123,13 +127,13 @@ article iframe{
 table { border-collapse: collapse; margin-bottom: 30px; width: 100%; max-width: 800px; }
 th, td { border: 1px solid #ddd; padding: 8px; }
 th { background-color: #f7f7f7; text-align: left; }
-.pk { color: darkgreen; font-weight: bold; }
-.fk { color: darkblue; }
+.pk { color: #FF0000; font-weight: bold; }
+.fk { color: #FF8200; }
 
 article.panel {
     background-color: #1A1A1A;
     border-radius: 12px;
-    width: 800px;
+    width: 60%;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
@@ -164,7 +168,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.script-button:hover {
     background-color: #FFC100;
     color: #0A0903;
 }
