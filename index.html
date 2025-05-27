@@ -12,23 +12,25 @@
     <header>
         <nav>
             <ul>
-                <!-- <li><a href="#home"><img src="assets/img/loco-icon.png" width="22px" alt=""> Inicio</a></li>
-                <li><a href="#structure">Estructura</a></li>
-                <li><a href="#behavior">Comportamiento</a></li>
-                <li><a href="#interaction">Interacción</a></li>
                 <li><a href="#requirements">Requerimientos</a></li>
-                <li><a href="#UI">UI</a></li>
-                <li><a href="#algorithms">Algoritmos</a></li>
-                <li><a href="#security">Seguridad</a></li>
-                <li><a href="#extra">Información adicional</a></li> -->
+                <li><a href="#high-level">Alto Nivel</a></li>
+                <li><a href="#home"><img src="assets/img/loco-icon.png" width="22px" alt=""></a></li>
+                <li><a href="#low-level">Bajo Nivel</a></li>
+                <li><a href="#database">Base de datos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- <section id="home">
-        </section> -->
+        <section id="home">
+            <article>
+                <h1>Fútbol ⚽ Admin</h1>
+                <p style="width: 80%; font-size: 1.2rem; line-height: 1.5; text-align: justify;">
+                    <b>FútbolAdmin</b> es una solución integral para la gestión de academia de fútbol que, a partir de un exhaustivo levantamiento de requerimientos se realizó la implementación de módulos clave, inscripción de alumnos, control de asistencias, generación de horarios y proceso de pagos sobre una arquitectura robusta diseñada en capas. A lo largo de los documentos se han definido los diferentes diagramas donde se han especificado las relaciones y validaciones de datos, y se han trazado las bases para un sistema de auditoría de logs que garantice trazabilidad, seguridad y cumplimiento normativo, sentando así los cimientos de la plataforma escalable y confiable.
+                </p>
+            </article>
+        </section>
+        <hr>
         <section id="requirements">
-            <h1>Fútbol ⚽ Admin</h1>
             <h2>Requerimientos escogidos</h2>
             <ul class="requirements-list">
                 <li>✅ <span>RF1:</span> Permitir el registro de nuevos alumnos con información básica (nombre, apellido, fecha de nacimiento, contacto).</li>
@@ -43,52 +45,949 @@
                 <li>✅ <span>RF10</span>: Permitir a los administradores crear, editar y eliminar usuarios (alumnos, entrenadores, padres).</li>
             </ul>
         </section>
-        <!-- <section id="structure">
-            <h2>Diagramas de estructura</h2>
+        <hr>
+        <section id="high-level">
+            <h2>Diseño de alto nivel</h2>
             <article>
                 <h3>Diagrama de clases</h3>
+                <iframe id="class.drawio.xml"></iframe>
             </article>
             <article>
                 <h3>Diagrama de despliegue</h3>
+                <iframe id="deploy.drawio.xml"></iframe>
             </article>
         </section>
-        <section id="behavior">
-            <h2>Diagramas de comportamiento</h2>
+        <hr>
+        <section id="low-level">
+            <h2>Diseño de bajo nivel</h2>
             <article>
-                <h3>Diagrama de casos de uso</h3>
-            </article>
-        </section>
-        <section id="interaction">
-            <h2>Diagramas de interacción</h2>
-            <article>
-                <h3>Detalles de casos de uso</h3>
+                <h3>Diagrama detallado de casos de uso</h3>
+                <div id="use-cases-carousel" class="carousel slide">
+                    <div class="carousel-indicators" id="use-cases-indicators">
+                    </div>
+                    <div class="carousel-inner" id="use-cases-inner">
+                    </div>
+                    <div class="carousel-dark">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#use-cases-carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#use-cases-carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </article>
             <article>
                 <h3>Diagrama de secuencia</h3>
+                <div id="sequence-carousel" class="carousel slide">
+                    <div class="carousel-indicators" id="sequence-indicators">
+                    </div>
+                    <div class="carousel-inner" id="sequence-inner">
+                    </div>
+                    <div class="carousel-dark">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sequence-carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sequence-carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </article>
             <article>
-                <h3>Diagrama de tiempo</h3>
+                <h3>Interfaces de usuario</h3>
+                <div id="ui-carousel" class="carousel slide">
+                    <div class="carousel-indicators" id="ui-indicators">
+                    </div>
+                    <div class="carousel-inner" id="ui-inner">
+                    </div>
+                    <div class="carousel-dark">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#ui-carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#ui-carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            <article>
+        </section>
+        <hr>
+        <section id="database">
+            <h2>Diseño de Base de datos</h2>
+            <article class="logic-design">
+                <h3>Diseño lógico</h3>
+                <h4>Entidad: students</h4>
+                <table>
+                    <thead>
+                        <tr><th>Campo</th><th>Tipo</th><th>Clave</th><th>Descripción</th></tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>student_id</td>
+                            <td>INT</td>
+                            <td class="pk">PK</td>
+                            <td>Identificador único</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>birth_date<span</td>
+                            <td>DATE</td>
+                            <td class=""></td>
+                            <td>Fecha relacionada</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>is_active</td>
+                            <td>BOOLEAN</td>
+                            <td class=""></td>
+                            <td>Estado o bandera lógica</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>payment_status</td>
+                            <td>BOOLEAN</td>
+                            <td class=""></td>
+                            <td>Estado o bandera lógica</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>email</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Correo electrónico</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>role</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Rol del usuario</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>password</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Contraseña</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>phone</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Número telefónico</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>first_name</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Nombre o apellido</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>last_name</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Nombre o apellido</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>FK<div><br></div></td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>category_id</td>
+                            <td>INT</td>
+                            <td class="fk">FK</td>
+                            <td>Referencia a otra entidad</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+                <h4>Entidad: support_tickets</h4>
+                <table>
+                    <thead>
+                        <tr><th>Campo</th><th>Tipo</th><th>Clave</th><th>Descripción</th></tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>ticket_id</td>
+                            <td>INT</td>
+                            <td class="pk">PK</td>
+                            <td>Identificador único</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>studen_id</td>
+                            <td>INT</td>
+                            <td class="fk">FK</td>
+                            <td>Referencia a otra entidad</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>subject</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Asunto del ticket o mensaje</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>description</td>
+                            <td>TEXT</td>
+                            <td class=""></td>
+                            <td>Texto descriptivo o mensaje</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>status</td>
+                            <td>BOOLEAN</td>
+                            <td class=""></td>
+                            <td>Estado o bandera lógica</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>created_date</td>
+                            <td>DATE</td>
+                            <td class=""></td>
+                            <td>Fecha relacionada</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+                <h4>Entidad: attedances</h4>
+                <table>
+                    <thead>
+                        <tr><th>Campo</th><th>Tipo</th><th>Clave</th><th>Descripción</th></tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>attendance_id</td>
+                            <td>INT</td>
+                            <td class="pk">PK</td>
+                            <td>Identificador único</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>studen_id</td>
+                            <td>INT</td>
+                            <td class="fk">FK</td>
+                            <td>Referencia a otra entidad</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>schedule_id</td>
+                            <td>INT</td>
+                            <td class="fk">FK</td>
+                            <td>Referencia a otra entidad</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>date</td>
+                            <td>DATE</td>
+                            <td class=""></td>
+                            <td>Fecha relacionada</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>present</td>
+                            <td>BOOLEAN</td>
+                            <td class=""></td>
+                            <td>Indica si estuvo presente</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+                <h4>Entidad: support_tickets</h4>
+                <table>
+                    <thead>
+                        <tr><th>Campo</th><th>Tipo</th><th>Clave</th><th>Descripción</th></tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>notification_id</td>
+                            <td>INT</td>
+                            <td class="pk">PK</td>
+                            <td>Identificador único</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>recipient_id</td>
+                            <td>INT</td>
+                            <td class="fk">FK</td>
+                            <td>Referencia a otra entidad</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>message</td>
+                            <td>TEXT</td>
+                            <td class=""></td>
+                            <td>Texto descriptivo o mensaje</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>sent_date</td>
+                            <td>DATE</td>
+                            <td class=""></td>
+                            <td>Fecha relacionada</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>is_read</td>
+                            <td>BOOLEAN</td>
+                            <td class=""></td>
+                            <td>Estado o bandera lógica</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+                <h4>Entidad: coaches</h4>
+                <table>
+                    <thead>
+                        <tr><th>Campo</th><th>Tipo</th><th>Clave</th><th>Descripción</th></tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>coach_id</td>
+                            <td>INT</td>
+                            <td class="pk">PK</td>
+                            <td>Identificador único</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><span</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>availability</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>email</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Correo electrónico</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>role</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Rol del usuario</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>password</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Contraseña</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>phone</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Número telefónico</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>first_name</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Nombre o apellido</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>last_name</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Nombre o apellido</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+                <h4>Entidad: payments</h4>
+                <table>
+                    <thead>
+                        <tr><th>Campo</th><th>Tipo</th><th>Clave</th><th>Descripción</th></tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>payment_id</td>
+                            <td>INT</td>
+                            <td class="pk">PK</td>
+                            <td>Identificador único</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>studen_id</td>
+                            <td>INT</td>
+                            <td class="fk">FK</td>
+                            <td>Referencia a otra entidad</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>payment_date</td>
+                            <td>DATE</td>
+                            <td class=""></td>
+                            <td>Fecha relacionada</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>amount</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>payment_method</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>status</td>
+                            <td>BOOLEAN</td>
+                            <td class=""></td>
+                            <td>Estado o bandera lógica</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+                <h4>Entidad: sports_metrics</h4>
+                <table>
+                    <thead>
+                        <tr><th>Campo</th><th>Tipo</th><th>Clave</th><th>Descripción</th></tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>metric_id</td>
+                            <td>INT</td>
+                            <td class="pk">PK</td>
+                            <td>Identificador único</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>studen_id</td>
+                            <td>INT</td>
+                            <td class="fk">FK</td>
+                            <td>Referencia a otra entidad</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>date</td>
+                            <td>DATE</td>
+                            <td class=""></td>
+                            <td>Fecha relacionada</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>speed</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>stamina</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>technique</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>notes</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+                <h4>Entidad: schedules</h4>
+                <table>
+                    <thead>
+                        <tr><th>Campo</th><th>Tipo</th><th>Clave</th><th>Descripción</th></tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>schedule_id</td>
+                            <td>INT</td>
+                            <td class="pk">PK</td>
+                            <td>Identificador único</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>coach_id</td>
+                            <td>INT</td>
+                            <td class="fk">FK</td>
+                            <td>Referencia a otra entidad</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>day_of_week</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>start_time</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>end_time</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>category_id</td>
+                            <td>INT</td>
+                            <td class="fk">FK</td>
+                            <td>Referencia a otra entidad</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+                <h4>Entidad: categories</h4>
+                <table>
+                    <thead>
+                        <tr><th>Campo</th><th>Tipo</th><th>Clave</th><th>Descripción</th></tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>category_id</td>
+                            <td>INT</td>
+                            <td class="pk">PK</td>
+                            <td>Identificador único</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>category_name</td>
+                            <td>VARCHAR</td>
+                            <td class="fk">FK</td>
+                            <td>Nombre o apellido</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>min_age</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>max_age</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                
+                <h4>Entidad: reports</h4>
+                <table>
+                    <thead>
+                        <tr><th>Campo</th><th>Tipo</th><th>Clave</th><th>Descripción</th></tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>report_id</td>
+                            <td>INT</td>
+                            <td class="pk">PK</td>
+                            <td>Identificador único</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>studen_id</td>
+                            <td>INT</td>
+                            <td class="fk">FK</td>
+                            <td>Referencia a otra entidad</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>decription</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>generated_date</td>
+                            <td>DATE</td>
+                            <td class=""></td>
+                            <td>Fecha relacionada</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>report_type</td>
+                            <td>VARCHAR</td>
+                            <td class=""></td>
+                            <td>Campo de datos</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
             </article>
             <article>
-                <h3>Diagrama de comunicación</h3>
+                <h3>Diagrama Entidad-Relación</h3>
+                <iframe id="mer.drawio.xml"></iframe>
             </article>
-        </section>
-        <section id="UI">
-            <h2>Diseño de interfaces de Usuario</h2>
             <article>
-                <h3>Libro no me hagas pensar</h3>
+                <h3>Script</h3>
+                <article class="panel">
+                    <div class="header">
+                    <h4>futbol_admin.sql</h4>
+                    <div class="buttons">
+                        <button id="btn-descargar" onclick="descargarArchivo()">Descargar</button>
+                        <button id="btn-copiar" onclick="copiarCodigo()">Copiar</button>
+                    </div>
+                    </div>
+                    <pre id="codigoSQL">
+CREATE TABLE categories (
+    category_id INT PRIMARY KEY,
+    category_name VARCHAR(100),
+    min_age INT,
+    max_age INT
+);
+
+CREATE TABLE coaches (
+    coach_id INT PRIMARY KEY,
+    specialty VARCHAR(100),
+    availability VARCHAR(100),
+    email VARCHAR(100),
+    role VARCHAR(50),
+    password VARCHAR(100),
+    phone VARCHAR(20),
+    first_name VARCHAR(50),
+    last_name VARCHAR(50)
+);
+
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    birth_date DATE,
+    is_active BOOLEAN,
+    payment_status VARCHAR(50),
+    email VARCHAR(100),
+    role VARCHAR(50),
+    password VARCHAR(100),
+    phone VARCHAR(20),
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    tutor_id INT,
+    category_id INT,
+    FOREIGN KEY (category_id) REFERENCES categories(category_id)
+);
+
+CREATE TABLE schedules (
+    schedule_id INT PRIMARY KEY,
+    coach_id INT,
+    day_of_week VARCHAR(20),
+    start_time TIME,
+    end_time TIME,
+    category_id INT,
+    FOREIGN KEY (coach_id) REFERENCES coaches(coach_id),
+    FOREIGN KEY (category_id) REFERENCES categories(category_id)
+);
+
+CREATE TABLE attendances (
+    attendance_id INT PRIMARY KEY,
+    student_id INT,
+    schedule_id INT,
+    date DATE,
+    present BOOLEAN,
+    FOREIGN KEY (student_id) REFERENCES students(student_id),
+    FOREIGN KEY (schedule_id) REFERENCES schedules(schedule_id)
+);
+
+CREATE TABLE support_tickets (
+    ticket_id INT PRIMARY KEY,
+    student_id INT,
+    subject VARCHAR(100),
+    description TEXT,
+    status VARCHAR(50),
+    created_date DATE,
+    FOREIGN KEY (student_id) REFERENCES students(student_id)
+);
+
+CREATE TABLE notifications (
+    notification_id INT PRIMARY KEY,
+    recipient_id INT,
+    message TEXT,
+    sent_date DATE,
+    is_read BOOLEAN,
+    FOREIGN KEY (recipient_id) REFERENCES students(student_id)
+);
+
+CREATE TABLE payments (
+    payment_id INT PRIMARY KEY,
+    student_id INT,
+    payment_date DATE,
+    amount DECIMAL(10, 2),
+    payment_method VARCHAR(50),
+    status VARCHAR(50),
+    FOREIGN KEY (student_id) REFERENCES students(student_id)
+);
+
+CREATE TABLE reports (
+    report_id INT PRIMARY KEY,
+    student_id INT,
+    description TEXT,
+    generated_date DATE,
+    report_type VARCHAR(50),
+    FOREIGN KEY (student_id) REFERENCES students(student_id)
+);
+
+CREATE TABLE sports_metrics (
+    metric_id INT PRIMARY KEY,
+    student_id INT,
+    date DATE,
+    speed DECIMAL(5, 2),
+    stamina DECIMAL(5, 2),
+    technique DECIMAL(5, 2),
+    notes TEXT,
+    FOREIGN KEY (student_id) REFERENCES students(student_id)
+);
+-- INSERCIÓN DE DATOS
+
+-- Categorías
+INSERT INTO categories VALUES
+(1, 'Infantil', 6, 10),
+(2, 'Adolescentes', 11, 15),
+(3, 'Juvenil', 16, 20);
+
+-- Coaches
+INSERT INTO coaches VALUES
+(1, 'Fútbol', 'Lunes-Viernes', 'coach1@mail.com', 'coach', 'pass1', '111-111', 'Luis', 'Gómez'),
+(2, 'Natación', 'Martes-Jueves', 'coach2@mail.com', 'coach', 'pass2', '222-222', 'María', 'López'),
+(3, 'Atletismo', 'Miércoles-Viernes', 'coach3@mail.com', 'coach', 'pass3', '333-333', 'Pedro', 'Martínez');
+
+-- Estudiantes
+INSERT INTO students VALUES
+(1, '2013-05-01', TRUE, 'paid', 's1@mail.com', 'student', 'pass', '555-001', 'Ana', 'Ramírez', NULL, 1),
+(2, '2012-08-12', TRUE, 'paid', 's2@mail.com', 'student', 'pass', '555-002', 'Carlos', 'Mendoza', NULL, 1),
+(3, '2011-11-03', TRUE, 'pending', 's3@mail.com', 'student', 'pass', '555-003', 'Laura', 'Salas', NULL, 1),
+(4, '2010-07-17', TRUE, 'paid', 's4@mail.com', 'student', 'pass', '555-004', 'David', 'Reyes', NULL, 2),
+(5, '2009-04-29', TRUE, 'paid', 's5@mail.com', 'student', 'pass', '555-005', 'Valentina', 'Ortiz', NULL, 2),
+(6, '2008-12-20', FALSE, 'unpaid', 's6@mail.com', 'student', 'pass', '555-006', 'Andrés', 'Morales', NULL, 2),
+(7, '2014-06-22', TRUE, 'paid', 's7@mail.com', 'student', 'pass', '555-007', 'Daniela', 'Ramos', NULL, 1),
+(8, '2011-09-18', TRUE, 'paid', 's8@mail.com', 'student', 'pass', '555-008', 'Lucas', 'Pérez', NULL, 2),
+(9, '2015-02-13', TRUE, 'pending', 's9@mail.com', 'student', 'pass', '555-009', 'Camila', 'Herrera', NULL, 1),
+(10, '2007-10-30', FALSE, 'paid', 's10@mail.com', 'student', 'pass', '555-010', 'Julián', 'Navarro', NULL, 3),
+(11, '2013-03-11', TRUE, 'paid', 's11@mail.com', 'student', 'pass', '555-011', 'Martina', 'Luna', NULL, 1),
+(12, '2009-01-04', TRUE, 'paid', 's12@mail.com', 'student', 'pass', '555-012', 'Elena', 'Vega', NULL, 2),
+(13, '2010-06-15', TRUE, 'unpaid', 's13@mail.com', 'student', 'pass', '555-013', 'Tomás', 'Figueroa', NULL, 2),
+(14, '2012-05-25', TRUE, 'paid', 's14@mail.com', 'student', 'pass', '555-014', 'Nicolás', 'Correa', NULL, 1),
+(15, '2011-07-07', TRUE, 'paid', 's15@mail.com', 'student', 'pass', '555-015', 'Sofía', 'Delgado', NULL, 2),
+(16, '2014-09-09', TRUE, 'pending', 's16@mail.com', 'student', 'pass', '555-016', 'Matías', 'Guerrero', NULL, 1),
+(17, '2008-03-23', TRUE, 'paid', 's17@mail.com', 'student', 'pass', '555-017', 'Sara', 'Rivera', NULL, 2),
+(18, '2007-11-29', TRUE, 'paid', 's18@mail.com', 'student', 'pass', '555-018', 'Agustín', 'Cabrera', NULL, 3),
+(19, '2013-12-10', TRUE, 'paid', 's19@mail.com', 'student', 'pass', '555-019', 'Lucía', 'Godoy', NULL, 1),
+(20, '2010-02-05', TRUE, 'paid', 's20@mail.com', 'student', 'pass', '555-020', 'Felipe', 'León', NULL, 2),
+(21, '2007-01-01', TRUE, 'unpaid', 's21@mail.com', 'student', 'pass', '555-021', 'Antonia', 'Araya', NULL, 3),
+(22, '2012-06-06', TRUE, 'paid', 's22@mail.com', 'student', 'pass', '555-022', 'Emilia', 'Silva', NULL, 1);
+
+-- Horarios
+INSERT INTO schedules VALUES
+(1, 1, 'Lunes', '16:00', '17:00', 1),
+(2, 2, 'Martes', '17:00', '18:00', 2),
+(3, 3, 'Miércoles', '15:00', '16:00', 3);
+
+-- Asistencias
+INSERT INTO attendances VALUES
+(1, 1, 1, '2025-05-01', TRUE),
+(2, 2, 1, '2025-05-01', FALSE),
+(3, 3, 1, '2025-05-01', TRUE),
+(4, 4, 2, '2025-05-01', TRUE),
+(5, 5, 2, '2025-05-01', FALSE);
+
+-- Tickets
+INSERT INTO support_tickets VALUES
+(1, 1, 'Problema con clase', 'No pude asistir ayer', 'abierto', '2025-05-15'),
+(2, 4, 'Reembolso', 'No quiero continuar', 'cerrado', '2025-05-10');
+
+-- Notificaciones
+INSERT INTO notifications VALUES
+(1, 1, 'Clase cancelada por lluvia', '2025-05-14', FALSE),
+(2, 2, 'Reprogramación de clase', '2025-05-15', TRUE);
+
+-- Pagos
+INSERT INTO payments VALUES
+(1, 1, '2025-05-01', 120.00, 'tarjeta', 'completado'),
+(2, 2, '2025-05-02', 100.00, 'efectivo', 'pendiente');
+
+-- Reportes
+INSERT INTO reports VALUES
+(1, 1, 'Buen desempeño', '2025-05-20', 'mensual'),
+(2, 2, 'Falta de asistencia', '2025-05-20', 'quincenal');
+
+-- Métricas deportivas
+INSERT INTO sports_metrics VALUES
+(1, 1, '2025-05-15', 7.8, 8.2, 6.9, 'Buen estado físico'),
+(2, 2, '2025-05-15', 6.5, 7.0, 5.8, 'Debe mejorar técnica');
+
+                    </pre>
+                </article>
+            </article>
+            <article>
+                <h3>Auditoria</h3>
+                <div>
+                    <h4>Objetivo del Módulo de Logs</h4>
+                    <ul>
+                        <li><strong>Trazabilidad completa:</strong> registrar cada acción relevante del sistema, del usuario y de procesos internos.</li>
+                        <li><strong>Detección y diagnóstico:</strong> contar con información suficiente para reproducir y resolver incidentes.</li>
+                        <li><strong>Cumplimiento y auditoría:</strong> conservar evidencias de accesos, cambios y operaciones críticas.</li>
+                        <li><strong>Monitorización proactiva:</strong> generar alertas automáticas ante patrones anómalos o fallos recurrentes.</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2>Tipos de Logs y Nivel de Detalle</h2>
+                    
+                    <h4>Logs de Aplicación</h4>
+                    <ul>
+                        <li><strong>INFO:</strong> inicio y fin de operaciones de negocio (login, generación de reportes, envío de notificaciones).</li>
+                        <li><strong>DEBUG:</strong> valores de parámetros clave, respuestas de servicios externos, estado interno de flujos críticos.</li>
+                    </ul>
+                    
+                    <h4>Logs de Seguridad</h4>
+                    <ul>
+                        <li><strong>AUTH:</strong> intentos de acceso (éxito/fallo), cambios de contraseña, escalado de privilegios.</li>
+                        <li><strong>AUDIT:</strong> creación, modificación o eliminación de datos sensibles (usuarios, roles, transacciones).</li>
+                    </ul>
+                    
+                    <h4>Logs de Base de Datos</h4>
+                    <ul>
+                        <li><strong>QUERY:</strong> identificación de consultas lentas o bloqueos, con referencia a transacción y usuario.</li>
+                        <li><strong>MIGRATION:</strong> historial de cambios en esquemas y versiones de la base de datos.</li>
+                    </ul>
+                    
+                    <h4>Logs de Infraestructura</h4>
+                    <ul>
+                        <li><strong>SERVICIO:</strong> arranques, paradas y reinicios de servicios o contenedores.</li>
+                        <li><strong>SISTEMA:</strong> uso de CPU/memoria/disco (resumido), eventos de red y escalamiento de instancias.</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2>Arquitectura de Logging</h2>
+                    
+                    <h4>Generación Local</h4>
+                    <p>Integración de un framework de logs (p.ej. Serilog, Log4Net, Winston) en cada capa de la aplicación.</p>
+                    
+                    <h4>Transporte y Almacenamiento Centralizado</h4>
+                    <ul>
+                        <li><strong>Collector:</strong> herramienta (Fluentd, Logstash) que agrupa y transforma registros.</li>
+                        <li><strong>Broker:</strong> cola para desacoplar productores y consumidores.</li>
+                        <li><strong>Storage:</strong> base de datos de log.</li>
+                    </ul>
+                    
+                    <h4>Indexación y Enriquecimiento</h4>
+                    <ul>
+                        <li>Etiquetado automático de registros con contexto adicional (ID de transacción, IP, geolocalización, versión de la app).</li>
+                        <li>Normalización de campos para facilitar búsquedas y agregaciones.</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2>Retención y Gestión de Ciclo de Vida</h2>
+                    
+                    <h4>Política de Retención</h4>
+                    <ul>
+                        <li>Logs críticos (seguridad, auditoría): conservar mínimo 1 año.</li>
+                        <li>Logs de rendimiento y debug: conservar 30–90 días según capacidad y norma.</li>
+                    </ul>
+                    
+                    <h4>Rotación y Compresión</h4>
+                    <ul>
+                        <li>Configurar rotación diaria o por tamaño (p.ej. a 100 MB en JSON).</li>
+                        <li>Comprimir automáticamente archivos históricos y transferir a almacenamiento frío.</li>
+                    </ul>
+                    
+                    <h4>Purgado Seguro</h4>
+                    <p>Eliminación irreversible tras vencimiento de la retención, garantizando cumplimiento de GDPR/LPD.</p>
+                </div>
+                <div>
+                    <h2>Monitoreo, Alertas y KPIs de Logs</h2>
+                    
+                    <h4>Alertas Automatizadas</h4>
+                    <ul>
+                        <li>Fallos de autenticación: &gt; 5 intentos fallidos en 10 min → notificación al equipo de seguridad.</li>
+                        <li>Errores críticos: aparición de excepciones no controladas (500s) &gt; 5 en 10 min → alerta de DevOps.</li>
+                        <li>Consultas lentas: detección de queries que excedan umbral configurado (p.ej. 2 s) → ticket automático.</li>
+                    </ul>
+                    
+                    <h4>Dashboards y Métricas Clave</h4>
+                    <ul>
+                        <li>Volumen de logs por nivel (INFO/ERROR) y componente.</li>
+                        <li>Tasa de éxito/fracaso de operaciones críticas (p.ej. pagos, registros).</li>
+                        <li>Latencia promedio de solicitudes y de escritura de logs en el sistema central.</li>
+                    </ul>
+                    
+                    <h4>Revisión Periódica</h4>
+                    <ul>
+                        <li>Informe mensual de eventos de seguridad y errores recurrentes.</li>
+                        <li>Reunión trimestral de análisis de tendencias y ajustes de umbrales.</li>
+                    </ul>
+                </div>
             </article>
         </section>
-        <section id="algorithms">
-            <h2>Algoritmos y Estructura de Datos</h2>
-        </section>
-        <section id="security">
-            <h2>Seguridad</h2>
-        </section>
-        <section id="extra">
-        </section> -->
         <footer></footer>
     </main>
+    <script type="module" src="assets/js/models.js"></script>
+    <script type="module" src="assets/js/main_script.js"></script>
+    <script type="module" src="assets/js/high-level.js"></script>
+    <script type="module" src="assets/js/low-level.js"></script>
+    <script type="module" src="assets/js/database.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
